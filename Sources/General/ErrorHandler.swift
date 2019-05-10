@@ -1,10 +1,10 @@
 //
-//  AppDelegate.swift
-//  Kingfisher-Demo
+//  ErrorHandler.swift
+//  Kingfisher
 //
-//  Created by Wei Wang on 15/4/6.
+//  Created by lazy on 2019/5/10.
 //
-//  Copyright (c) 2019 Wei Wang <onevcat@gmail.com>
+//  Copyright (c) 2019年 Wei Wang <onevcat@gmail.com>
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -24,22 +24,19 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-import UIKit
-import Kingfisher
+import Foundation
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+public class ErrorHandler {
+    
+    public enum KFError {
+        case sizeOutofRange
+    }
+    
+    public static let shared = ErrorHandler()
+    
+    public var infinityError: ((KFError)->())?
+    
+    private init() {
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        
-        let root = TestViewController()
-        window?.rootViewController = root
-        
-        return true
     }
 }

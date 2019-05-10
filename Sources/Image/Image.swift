@@ -269,6 +269,17 @@ extension KingfisherWrapper where Base: Image {
     /// - Returns: An `Image` object represents the image if created. If the `data` is invalid or not supported, `nil`
     ///            will be returned.
     public static func image(data: Data, options: ImageCreatingOptions) -> Image? {
+        
+        guard let source = CGImageSourceCreateWithData(data as CFData, nil),
+            let header = CGImageSourceCopyPropertiesAtIndex(source, 0, nil) else { return nil }
+        let map = header as NSDictionary
+        guard let width = map.value(forKey: "PixelWidth") as? CGFloat,
+            let height = map.value(forKey: "PixelHeight") as? CGFloat else { return nil }
+        if width > 4096.0 || height > 4096.0 {
+            ErrorHandler.shared.infinityError?(ErrorHandler.KFError.sizeOutofRange)
+            return nil
+        }
+        
         var image: Image?
         switch data.kf.imageFormat {
         case .JPEG:

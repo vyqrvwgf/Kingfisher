@@ -55,6 +55,10 @@
 		4BD821682189FD330084CC21 /* SessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD821662189FD330084CC21 /* SessionDataTask.swift */; };
 		4BD821692189FD330084CC21 /* SessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD821662189FD330084CC21 /* SessionDataTask.swift */; };
 		4BD8216A2189FD330084CC21 /* SessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD821662189FD330084CC21 /* SessionDataTask.swift */; };
+		63BFA7FB22851C68004C6612 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BFA7FA22851C68004C6612 /* ErrorHandler.swift */; };
+		63BFA7FC22851C74004C6612 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BFA7FA22851C68004C6612 /* ErrorHandler.swift */; };
+		63BFA7FD22851C74004C6612 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BFA7FA22851C68004C6612 /* ErrorHandler.swift */; };
+		63BFA7FE22851C74004C6612 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BFA7FA22851C68004C6612 /* ErrorHandler.swift */; };
 		AE1D6776DC6183B84B561961 /* libPods-KingfisherTests-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 124FABC032484C46AC221D0C /* libPods-KingfisherTests-tvOS.a */; };
 		D10EC2361C3D632300A4211C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2944481C3D01B20088C3E7 /* Kingfisher.framework */; };
 		D114F36E215D2D0B00A01349 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12AB6BC215D2BB50013BA68 /* String+MD5.swift */; };
@@ -296,6 +300,7 @@
 		4BCFF7A9219932390055AAC4 /* DiskStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskStorageTests.swift; sourceTree = "<group>"; };
 		4BD821612189FC0C0084CC21 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
 		4BD821662189FD330084CC21 /* SessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDataTask.swift; sourceTree = "<group>"; };
+		63BFA7FA22851C68004C6612 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		6CD5C0134AA4B1C0892E7319 /* Pods-KingfisherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingfisherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KingfisherTests/Pods-KingfisherTests.release.xcconfig"; sourceTree = "<group>"; };
 		7204D40BEFEA059FA25864C4 /* Pods-KingfisherTests-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingfisherTests-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KingfisherTests-macOS/Pods-KingfisherTests-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CCDD057F8DA8D24EE701CF98 /* libPods-KingfisherTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KingfisherTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -528,6 +533,7 @@
 		D12AB6B0215D2BB50013BA68 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				63BFA7FA22851C68004C6612 /* ErrorHandler.swift */,
 				D1A1CC98219FAB3500263AD8 /* ImageSource */,
 				D12AB6B1215D2BB50013BA68 /* Kingfisher.swift */,
 				D12AB6B2215D2BB50013BA68 /* KingfisherError.swift */,
@@ -864,6 +870,7 @@
 					};
 					D1ED2D341AD2D09F00CFC3EB = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 8G74YECJ4Z;
 						LastSwiftMigration = 1020;
 					};
 					D1ED2D3E1AD2D09F00CFC3EB = {
@@ -1099,6 +1106,7 @@
 				D1A37BD6215D2DBA009B39B7 /* Resource.swift in Sources */,
 				D1A37BD7215D2DBA009B39B7 /* ImageDownloader.swift in Sources */,
 				D1A37BD8215D2DBA009B39B7 /* ImageModifier.swift in Sources */,
+				63BFA7FE22851C74004C6612 /* ErrorHandler.swift in Sources */,
 				D1A37BD9215D2DBA009B39B7 /* ImagePrefetcher.swift in Sources */,
 				D1A37BDB215D2DBA009B39B7 /* Box.swift in Sources */,
 				D1A1CC9C219FAB4B00263AD8 /* Source.swift in Sources */,
@@ -1204,6 +1212,7 @@
 				D12AB709215D2BB50013BA68 /* KingfisherError.swift in Sources */,
 				D1A37BEE215D375F009B39B7 /* Deprecated.swift in Sources */,
 				D12AB725215D2BB50013BA68 /* Box.swift in Sources */,
+				63BFA7FD22851C74004C6612 /* ErrorHandler.swift in Sources */,
 				4B8E291D216F40AA0095FAD1 /* AuthenticationChallengeResponsable.swift in Sources */,
 				D12AB711215D2BB50013BA68 /* KingfisherOptionsInfo.swift in Sources */,
 			);
@@ -1250,6 +1259,7 @@
 				4B46CC62217449C600D90C4A /* MemoryStorage.swift in Sources */,
 				D1A37BE6215D359F009B39B7 /* ImageFormat.swift in Sources */,
 				D12AB713215D2BB50013BA68 /* KingfisherOptionsInfo.swift in Sources */,
+				63BFA7FC22851C74004C6612 /* ErrorHandler.swift in Sources */,
 				D1E56448219B16330057AAE3 /* ImageDataProvider.swift in Sources */,
 				D1A37BEB215D365A009B39B7 /* ExtensionHelpers.swift in Sources */,
 			);
@@ -1301,6 +1311,7 @@
 				D12AB708215D2BB50013BA68 /* KingfisherError.swift in Sources */,
 				D1A37BED215D375F009B39B7 /* Deprecated.swift in Sources */,
 				D12AB724215D2BB50013BA68 /* Box.swift in Sources */,
+				63BFA7FB22851C68004C6612 /* ErrorHandler.swift in Sources */,
 				4B8E291C216F40AA0095FAD1 /* AuthenticationChallengeResponsable.swift in Sources */,
 				D12AB710215D2BB50013BA68 /* KingfisherOptionsInfo.swift in Sources */,
 			);
@@ -1715,9 +1726,10 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1600;
+				DEVELOPMENT_TEAM = 8G74YECJ4Z;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1600;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1740,9 +1752,10 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1600;
+				DEVELOPMENT_TEAM = 8G74YECJ4Z;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1600;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
